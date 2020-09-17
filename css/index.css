@@ -1,0 +1,454 @@
+header{
+    background-color: #333333;
+    color: #b0b0b0;
+    font-size: 12px;
+    /*  使内容垂直居中  line-height=height   */
+    line-height: 40px;
+    overflow: hidden;
+}
+.cont{
+    width: 1226px;
+    margin: auto;  
+}
+
+header .left{
+    float: left;
+}
+
+header .right{
+    float: right;
+}
+header li{
+    float: left;
+    margin-right: 15px;
+}
+header .shop{
+    padding: 0 15px;
+}
+header .shop:hover{
+    background-color: #424242;
+}
+
+/*  导航栏部分   */
+.sea_cont{
+    height: 100px;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.sea_cont img{
+    float: left;
+    margin-right: 188px;
+}
+.sea_cont ul{
+    float: left;
+
+}
+.sea_cont li{
+    float: left;
+    line-height: 55px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.sea_cont .sear_rg{
+    float: right;
+}
+.sea_cont input{
+    width: 234px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+}
+.sea_cont .sear_rg p{
+    float: right;
+    width: 50px;
+    height: 48px;
+    border: 1px solid  #e0e0e0;
+    border-left: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/*    banner */
+.banner-cont{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 460px;
+}
+/*   绝对定位，相对于离他最近的有定位属性的父元素  */
+.banner ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 235px;
+    background-color: #0c1b51;
+    opacity: .9;
+    padding:20px 0;
+}
+.banner li{
+    height: 42px;
+    line-height: 42px;
+    color: white;
+    padding-left: 29px;
+    padding-right: 24px;
+}
+.banner li span{
+    float: right;
+}
+.banner li:hover{
+    background-color: thistle;
+}
+.banner .lf-btn{
+    position: absolute;
+    left: 243px;
+    top: 215px;
+}
+.banner .lf-btn span{
+    font-size: 30px;
+}
+.banner .rg-btn{
+    position: absolute;
+    top: 215px;
+    right: 11px;
+}
+.banner .rg-btn span{
+    font-size: 30px;
+}
+.banner .btn{
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+}
+.banner .btn p{
+    width: 6px;
+    height: 6px;
+    border: 2px solid #6d9fad;
+    background-color: #2f7486;
+    /*   圆角 */
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+}
+.banner .btn p:hover{
+    background-color: #95daec;
+}
+
+
+/*  服务   */
+.server{
+    margin-top: 14px;
+    margin-bottom: 42px;
+}
+.ser-cont{
+
+    display: flex;
+    justify-content: space-between;
+}
+.server ul{
+    width: 234px;
+    height: 170px;
+    padding: 9px 4px;
+    box-sizing: border-box;
+    background-color: #5f5750;
+    
+}
+.server li{
+    float: left;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    color: #cfcdcb;
+    font-size: 12px;
+    padding-top: 15px;
+    position: relative;
+}
+.server li:nth-child(1) div{
+    width: 63px;
+    height: 1px;
+    background-color: #665e57;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+.server li:nth-child(3) div{
+    width: 63px;
+    height: 1px;
+    background-color: #665e57;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+}
+.server li:nth-child(2) div:nth-of-type(1){
+    height: 69px;
+    width: 1px;
+    background-color: #665e57;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.server li:nth-child(2) div:nth-of-type(2){
+    height: 69px;
+    width: 1px;
+    background-color: #665e57;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.server li:nth-child(2) div:nth-of-type(3){
+    height: 1px;
+    width: 63px;
+    background-color: #665e57;
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+}
+.server li:nth-child(5) div:nth-of-type(1){
+    height: 69px;
+    width: 1px;
+    background-color: #665e57;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.server li:nth-child(5) div:nth-of-type(2){
+    height: 69px;
+    width: 1px;
+    background-color: #665e57;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+/*  小米闪购 */
+.san .tit{
+    font-size: 20px;
+    padding-bottom: 18px;
+}
+.san .tit span{
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    float: right;
+    color: #b4b0b0;
+    line-height: 24px;
+}
+.san .tit span:nth-of-type(2){
+    border-right: none;
+}
+
+.san .goods{
+    display: flex;
+    justify-content: space-between;
+}
+.san .goods div{
+    width: 234px;
+    height: 343px;
+    background-color: #fafafa;
+    text-align: center;
+}
+.san .goods .lf{
+    border-top: 1px solid #e53935;
+    padding-top: 58px;
+    background-color: #f1eded;
+}
+.san .goods .lf p:nth-of-type(1){
+    font-size: 19px;
+    line-height: 19px;
+    color: #ef3a3b;
+    margin-bottom: 31px;
+    margin-top: 0;
+}
+.san .goods .txt{
+    font-size: 13px;
+    color: #6f6d6d;
+    margin: 33px 0;
+}
+.san .goods .lf p:nth-of-type(3){
+    font-size: 20px;
+}
+.san .goods span{
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: #605751;
+    text-align: center;
+    line-height: 46px;
+    font-size: 20px;
+    color: white;
+}
+.san .goods div:nth-of-type(2){
+    border-top: 1px solid #ffac13;
+}
+.san .goods div:nth-of-type(3){
+    border-top: 1px solid #83c44e;
+}
+.san .goods div:nth-of-type(4){
+    border-top: 1px solid #2196f3;
+}
+.san .goods div:nth-of-type(5){
+    border-top: 1px solid #e53935;
+}
+
+.san .goods div{
+    padding-top: 60px;
+}
+.san .goods div p:nth-of-type(1){
+    margin-top: 20px;
+    font-size: 13px;
+}
+.san .goods div p:nth-of-type(2){
+    margin-top: 10px;
+    margin-bottom: 19px;
+    font-size: 12px;
+    color: #adadad;
+}
+.san .goods div p:nth-of-type(3){
+   
+    font-size: 12px;
+    color: #fa6509;
+}
+.san .goods div del{
+    color: #adadad;
+}
+
+/*   广告 */
+.ad{
+    margin: 42px 0;
+}
+
+/*   全部商品 */
+.all{
+    background-color: #f5f5f5;
+}
+.all .phone .tit{
+    padding: 40px 0 18px 0;
+    font-size: 21px;
+    line-height: 21px;
+}
+.all .phone .tit p{
+    float: right;
+    font-size: 15px;
+}
+.all .phone .content .lf{
+    float: left;
+    width: 234px;
+}
+.all .phone .content .rg{
+    float: right;
+    width: 980px;
+}
+.all ul{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+text-align: center;
+}
+.all li{
+    width: 234px;
+    height: 300px;
+    background-color: #fff;
+    padding-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.all li p:nth-of-type(1){
+    margin-top: 30px;
+    font-size: 12px;
+}
+.all li p:nth-of-type(2){
+    margin-top: 5px;
+    font-size: 12px;
+    color: #b0b0b7;
+}
+.all li p:nth-of-type(3){
+    margin-top: 15px;
+    font-size: 12px;
+    color: #fa6509;
+}
+.all li p:nth-of-type(3) del{
+    
+    font-size: 12px;
+    color: #b0b0b7;
+}
+.all li .pos{
+    width: 65px;
+    height: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #83c44e;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 85px;
+}
+.all .cont>img{
+    margin-top: 28px;
+}
+.all .lf img{
+    display: block;
+    margin-bottom: 14px;
+}
+.all .tit p a{
+    margin-left: 30px;
+    font-size: 12px;
+    
+}
+.all .tit p a:hover{
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+/* 为你推荐 */
+.tuijian .tit span{
+    display: inline-block;
+    width: 36px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    float: right;
+    color: #b4b0b0;
+    line-height: 24px;
+}
+.tuijian .tit span:nth-of-type(2){
+    border-right: none;
+}
+.all .tuijian .content .rg{
+    width: 100%;
+}
+
+.all .tuijian .rg P:nth-of-type(2){
+    color: #ef3a3b;
+}
+.all .tuijian .rg P:nth-of-type(3){
+    color: #e0e0e0;
+}
+
+.all .hot .content .rg{
+    width: 100%;
+}
+.all .hot .rg li{
+    width: 296px;
+    padding-top: 0;
+    height: 416px;
+    text-align: left;
+}
+.all .hot .rg li p{
+
+    padding-left: 27px;
+}
+.all .gushi .rg li:nth-of-type(1){
+    border-top: 1px solid #ffac13;
+}
+.all .gushi .rg li:nth-of-type(2){
+    border-top: 1px solid #83c44e;
+}
+.all .gushi .rg li:nth-of-type(3){
+    border-top: 1px solid #2196f3;
+}
+.all .gushi .rg li:nth-of-type(4){
+    border-top: 1px solid #e53935;
+}
