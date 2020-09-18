@@ -1,0 +1,100 @@
+.cont{
+    width: 1130px;
+    margin: auto;
+}
+.content{
+    height: 480px;
+    background: url(../images/banner01.jpg) no-repeat;
+    background-size: 100% 480px;
+}
+.form{
+    position: relative;
+}
+.user{
+    width: 410px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    padding: 0 32px;
+    
+}
+.user .type p{
+    float: left;
+    margin: 30px 0;
+    padding: 0 40px;
+    font-size: 21px;
+    color: #666666;
+    border-right: 2px solid #e0e0e0;
+}
+.user .type p:nth-child(2){
+    border: none;
+}
+.user .type .active{
+    color: #f56600;
+}
+.user input{
+    width: 348px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    padding-left: 14px;
+}
+.user input:nth-child(2){
+    margin: 14px 0 24px;
+}
+.user input:nth-child(3){
+    border: none;
+    background-color: #ef5b00;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+/* 提示文字的样式 */
+input::placeholder{
+    /* color: #ef5b00; */
+}
+
+.reg p{
+    margin-top: 13px;
+    font-size: 12px;
+}
+.reg p:nth-child(1){
+    float: left;
+    color: #ef5b00;
+}
+.reg p:nth-child(1) a{
+    color: #ef5b00;
+}
+.reg p:nth-child(2){
+    float: right;
+    color: #999999;
+}
+.reg p:nth-child(2) a{ 
+    color: #999999;
+}
+
+.fg{
+    position: absolute;
+    width: 348px;
+    bottom: 6px;
+    height: 1px;
+    background-color: #999999;
+}
+.user>p{
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 163px;
+    color: #999999;
+    background-color: white;
+}
+.foot{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 180px;
+}
+.foot p:nth-child(1){
+    margin-bottom: 17px;
+}
