@@ -452,3 +452,81 @@ text-align: center;
 .all .gushi .rg li:nth-of-type(4){
     border-top: 1px solid #e53935;
 }
+
+/* 视频 */
+.all .video .rg li {
+    text-align: center;
+}
+
+/* 底部服务 */
+.footer-server .top ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 27px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.footer-server .top li{
+    font-size: 14px;
+    color: #616161;
+    padding: 0 58px;
+    border-right: 1px solid #e0e0e0;
+}
+.footer-server .top li:last-child{
+    border: none;
+}
+.footer-server .content li{
+    float: left;
+    width: 155px;
+
+}
+.footer-server .content{
+    padding: 40px 0;
+}
+.footer-server .content li p{
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 15px;
+}
+.footer-server .content li p:first-child{
+    color: #000;
+    margin-bottom: 30px;
+}
+.footer-server .content .rg{
+    float: right;
+    width: 250px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;  
+}
+.footer-server .content .rg p{
+    margin: 0;
+}
+.footer-server .content .rg p:first-child{
+    font-size: 19px;
+    color: #ff6718;
+    margin-bottom: 5px;
+}
+.footer-server .content .rg p:nth-child(3){
+    margin-top: 5px;
+    margin-bottom: 18px;
+}
+.footer-server .content .rg p:nth-child(4){
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+    margin: auto;
+}
+
+/*  底部 */
+.footer{
+    height: 230px;
+    background-color: #fafafa;
+}
+.footer img{
+    float: left;
+}
+.footer .text{
+    float: left;
+    padding-left: 10px;
+}
