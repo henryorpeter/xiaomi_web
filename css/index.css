@@ -413,7 +413,29 @@ text-align: center;
     color: #ff6700;
     border-bottom: 2px solid #ff6700;
 }
+.all .brick-item-s{
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 140px;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 0;
+    text-align: left;
+}
+.all .brick-item-s p{
+    margin-left: 20px;
+    margin-top: 3px;
+    font-size: 12px;
+}
 
+.all .brick-item-s .btn-more{
+    position: absolute;
+    top: 28px;
+    right: 35px;
+    width: 48px;
+    height: 48px;
+}
 /* 为你推荐 */
 .tuijian .tit span{
     display: inline-block;
@@ -537,7 +559,13 @@ text-align: center;
 .footer img{
     float: left;
 }
-.footer .text{
+.footer .text p{
     float: left;
     padding-left: 10px;
+    font-size: 13px;
+}
+.footer .text div{
+    float: left;
+    padding-left: 75px;
+    padding-top: 12px;
 }
