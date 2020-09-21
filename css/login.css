@@ -82,6 +82,14 @@ input::placeholder{
     height: 1px;
     background-color: #999999;
 }
+.qit{
+    margin-top: 180px;
+    margin-left: 28px;
+}
+.qit div{
+    float: left;
+    margin-left: 30px;
+}
 .user>p{
     font-size: 12px;
     position: absolute;
