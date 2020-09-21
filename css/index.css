@@ -100,30 +100,30 @@ header .shop:hover{
 .banner li:hover{
     background-color: thistle;
 }
-.banner .lf-btn{
+.banner #lf-btn{
     position: absolute;
     left: 243px;
     top: 215px;
 }
-.banner .lf-btn span{
+.banner #lf-btn span{
     font-size: 30px;
 }
-.banner .rg-btn{
+.banner #rg-btn{
     position: absolute;
     top: 215px;
     right: 11px;
 }
-.banner .rg-btn span{
+.banner #rg-btn span{
     font-size: 30px;
 }
-.banner .btn{
+.banner #btn{
     position: absolute;
     bottom: 25px;
     right: 35px;
 }
-.banner .btn p{
-    width: 6px;
-    height: 6px;
+.banner #btn p{
+    width: 8px;
+    height: 8px;
     border: 2px solid #6d9fad;
     background-color: #2f7486;
     /*   圆角 */
@@ -131,7 +131,7 @@ header .shop:hover{
     float: left;
     margin-left: 10px;
 }
-.banner .btn p:hover{
+.banner #btn p:hover{
     background-color: #95daec;
 }
 

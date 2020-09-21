@@ -117,13 +117,13 @@
                     <span class="iconfont">&#xe653;</span>
                 </li>
             </ul>
-            <p class="lf-btn">
+            <p id="lf-btn">
                 <span class="iconfont">&#xe605;</span>
             </p>
-            <p class="rg-btn">
+            <p id="rg-btn">
                 <span class="iconfont">&#xe61d;</span>
             </p>
-            <div class="btn">
+            <div id="btn">
                 <p></p>
                 <p></p>
                 <p></p>
@@ -132,6 +132,113 @@
             </div>
         </div>
     </div>
+
+    <script>
+        //   初版轮播图    即那个一段时间切换一张图片
+        //   功能2，点击左右按钮，切换图片
+        // 功能3  点击圆点按钮，显示对应图片
+        //  所有图片放在一一个数组里面
+        var arr = ["./images/banner01.jpg", "./images/banner02.webp", "./images/banner03.webp", "./images/banner04.webp", "./images/banner05.webp"];
+        var lf = document.getElementById('lf-btn').getElementsByTagName('span')[0];
+        var rg = document.getElementById('rg-btn').getElementsByTagName('span')[0];
+        //    圆点按钮
+        var li = document.getElementById('btn').getElementsByTagName('p');
+
+        // 设置定时器，改变图片路径
+        var div = document.getElementsByTagName('div')[0];
+        var img = document.getElementsByTagName('img')[1];
+        var n = 0;
+        var timer;
+        li[n].style.backgroundColor = 'red';
+        timer = setInterval(function () {
+            n++;  // n =n+1;
+            //   当n=4；  n=0;
+            if (n >= arr.length) {
+                n = 0;
+            }
+            img.src = arr[n];
+            // 在改变当前圆点按钮之前，重置所有按钮样式
+            for (var i = 0; i < li.length; i++) {
+                li[i].style.backgroundColor = '';
+            }
+            //  使对应圆点按钮处于触发状态
+            li[n].style.backgroundColor = 'red';
+        }, 2000)
+
+        //  当鼠标移入时，轮播停止（定时器清除）
+        div.onmouseenter = function () {
+            clearInterval(timer);
+        }
+
+        // 当鼠标离开时，轮播重新开始
+        div.onmouseleave = function () {
+            timer = setInterval(function () {
+                n++;  // n =n+1;
+                //   当n=4；  n=0;
+                if (n >= arr.length) {
+                    n = 0;
+                }
+                img.src = arr[n];
+
+                // 在改变当前圆点按钮之前，重置所有按钮样式
+                for (var i = 0; i < li.length; i++) {
+                    li[i].style.backgroundColor = '';
+                }
+                //  使对应圆点按钮处于触发状态
+                li[n].style.backgroundColor = 'red';
+            }, 2000)
+        }
+
+        // 点击左按钮，切换上一张
+
+        lf.onclick = function () {
+            n--; //n = n-1;
+            //   当n=0;n=3  第一张切换时，转到最后一张图片
+            if (n < 0) {
+                n = arr.length - 1;
+            }
+            img.src = arr[n];
+            // 在改变当前圆点按钮之前，重置所有按钮样式
+            for (var i = 0; i < li.length; i++) {
+                li[i].style.backgroundColor = '';
+            }
+            //  使对应圆点按钮处于触发状态
+            li[n].style.backgroundColor = 'red';
+        }
+
+        // 点击右按钮，切换下一张
+        rg.onclick = function () {
+            n++;
+            if (n >= arr.length) {
+                n = 0;
+            }
+            img.src = arr[n];
+            // 在改变当前圆点按钮之前，重置所有按钮样式
+            for (var i = 0; i < li.length; i++) {
+                li[i].style.backgroundColor = '';
+            }
+            //  使对应圆点按钮处于触发状态
+            li[n].style.backgroundColor = 'red';
+        }
+
+        //  循环绑定点击事件
+        for (var i = 0; i < li.length; i++) {
+            // 给每一个li添加自定义属性  索引值
+            li[i].index = i;
+            li[i].onclick = function () {
+                //   用this指代当前触发的元素
+                n = this.index;
+                img.src = arr[n];
+                // 在改变当前圆点按钮之前，重置所有按钮样式
+                for (var i = 0; i < li.length; i++) {
+                    li[i].style.backgroundColor = '';
+                }
+                //  使对应圆点按钮处于触发状态
+                li[n].style.backgroundColor = 'red';
+            }
+        }
+    </script>
+
     <!-- server模块 -->
     <div class="server">
         <div class="cont ser-cont">
