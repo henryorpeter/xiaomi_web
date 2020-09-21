@@ -108,12 +108,12 @@ header .shop:hover{
 .banner #lf-btn span{
     font-size: 30px;
 }
-.banner #rg-btn{
+.banner .rg-btn{
     position: absolute;
     top: 215px;
     right: 11px;
 }
-.banner #rg-btn span{
+.banner .rg-btn span{
     font-size: 30px;
 }
 .banner #btn{
@@ -475,15 +475,26 @@ text-align: center;
 }
 .all .gushi .rg li:nth-of-type(1){
     border-top: 1px solid #ffac13;
+    text-align: center;
 }
 .all .gushi .rg li:nth-of-type(2){
     border-top: 1px solid #83c44e;
+    text-align: center;
+
 }
 .all .gushi .rg li:nth-of-type(3){
     border-top: 1px solid #2196f3;
+    text-align: center;
+
 }
 .all .gushi .rg li:nth-of-type(4){
     border-top: 1px solid #e53935;
+    text-align: center;
+
+}
+
+.all .gushi .rg img{
+    margin-top: 80px;
 }
 
 /* 视频 */

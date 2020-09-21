@@ -332,6 +332,7 @@
         </div>
     </div>
 
+
     <!-- 广告 -->
     <div class="ad">
         <div class="cont">
@@ -411,11 +412,31 @@
                                 <p>549元 <del>599元</del></p>
                                 <div class="redpos">减50元</div>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </div>
+            <script>
+                var ul=document.getElementById('tg').getElementsByTagName('ul')[0];
+                var str='';
+                // 请求商品数据信息，动态渲染到页面上
+                var ajax = new XMLHttpRequest();
+                ajax.open('get','./data/comment.json');
+                ajax.send();
+                ajax.onreadystatechange = function(){
+                    if(ajax.readyState==4 && ajax.status==200){
+                        var arr = eval(ajax.response);
+                        console.log(arr);
+                        for(var i=0;i<arr.length;i++){
+                            console.log(arr[i].src);
+                            str =str + '<li><img src="'+arr[i].src+'" alt=""><p>'+arr[i].name+'</p><p>'+arr[i].comment+'</p><p>'+arr[i].price+'</p></li>'
+                        }
+                        console.log(str);
+                        ul.innerHTML = str;
+                    }
+                }
+        
+            </script>
 
             <!-- 广告图 -->
             <img src="./images/m-1首页_52.jpg" alt="">
@@ -484,7 +505,7 @@
                                 <p>小米净水器</p>
                                 <p>1999元</p>
                                 <div class="btn-more">
-                                <img src="./images/m-1首页_82.jpg" alt="">
+                                    <img src="./images/m-1首页_82.jpg" alt="">
                                 </div>
                                 <div class="brick-item-s" style="margin-top: 70px;">
                                     <div class="btn-more">
@@ -567,7 +588,7 @@
                                 <p>小米米家机器人</p>
                                 <p>399元</p>
                                 <div class="btn-more">
-                                <img src="./images/01_122.jpg" alt="">
+                                    <img src="./images/01_122.jpg" alt="">
                                 </div>
                                 <div class="brick-item-s" style="margin-top: 70px;">
                                     <div class="btn-more">
@@ -648,7 +669,7 @@
                                 <p>小米USB充电宝</p>
                                 <p>59元</p>
                                 <div class="btn-more">
-                                <img src="./images/cdb.webp" width="80px" height="80px" alt="">
+                                    <img src="./images/cdb.webp" width="80px" height="80px" alt="">
                                 </div>
                                 <div class="brick-item-s" style="margin-top: 70px;">
                                     <div class="btn-more">
@@ -679,7 +700,7 @@
                 <div class="content clearfix">
                     <div class="lf">
                         <img src="./images/m-1首页_139.jpg" alt="">
-                        <img src="./images/m-1首页_192.jpg" alt="">
+                        <img src="./images/01_192.jpg" alt="">
                     </div>
                     <div class="rg">
                         <ul>
@@ -730,7 +751,7 @@
                                 <p>小米6X极简</p>
                                 <p>29元</p>
                                 <div class="btn-more">
-                                <img src="./images/01_199.jpg" alt="">
+                                    <img src="./images/01_199.jpg" alt="">
                                 </div>
                                 <div class="brick-item-s" style="margin-top: 70px;">
                                     <div class="btn-more">
@@ -813,7 +834,7 @@
                                 <p>8H乳胶弹簧</p>
                                 <p>1599元</p>
                                 <div class="btn-more">
-                                <img src="./images/01_234.jpg" alt="">
+                                    <img src="./images/01_234.jpg" alt="">
                                 </div>
                                 <div class="brick-item-s" style="margin-top: 70px;">
                                     <div class="btn-more">
@@ -926,36 +947,53 @@
             <div class="phone hot gushi">
                 <div class="tit">
                     内容
-
                 </div>
                 <div class="content clearfix">
                     <div class="rg">
                         <ul>
                             <li>
-
-                                <p>小米8青春版</p>
-                                <p>潮流镜面渐变</p>
-                                <p>1999元</p>
-                                <img src="./images/01_269.jpg" alt="">
+                                <p>图书</p>
+                                <p>哈利.波特与被诅咒的孩子</p>
+                                <p>“哈利·波特”第八个故事中文版震撼来夔!</p>
+                                <img src="./images/m-1首页_206-90.jpg" alt="">
+                                <div class="btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </li>
                             <li>
-
-                                <p>小米8青春版</p>
-                                <p>潮流镜面渐变</p>
-                                <p>1999元</p>
-                                <img src="./images/01_269.jpg" alt="">
+                                <p>MIUI主题</p>
+                                <p>LINE FRIENDS温暖圣诞...</p>
+                                <p>超萌超可爱LINE FRIENDS壁纸主题来袭~</p>
+                                <img src="./images/m-1首页_206.jpg" alt="">
+                                <div class="btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </li>
                             <li>
-                                <p>小米8青春版</p>
-                                <p>潮流镜面渐变</p>
-                                <p>1999元 </p>
-                                <img src="./images/01_269.jpg" alt="">
+                                <p>游戏</p>
+                                <p>非人学园</p>
+                                <p>脑洞大开的二次元竞技手游 </p>
+                                <img src="./images/m-1首页_209-91.jpg" alt="">
+                                <div class="btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </li>
                             <li>
-                                <p>小米8青春版</p>
-                                <p>潮流镜面渐变</p>
-                                <p>1999元</p>
-                                <img src="./images/01_269.jpg" alt="">
+                                <p>应用</p>
+                                <p>2018金米奖</p>
+                                <p>最优秀的应用和游戏</p>
+                                <img src="./images/m-1首页_209.jpg" alt="">
+                                <div class="btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </li>
 
 
@@ -977,29 +1015,23 @@
                             <li>
                                 <img src="./images/01_296.jpg" alt="">
                                 <p>一团火</p>
-                                <p>潮流镜面渐变</p>
-
+                                <p>小米创业八年内部纪录片（手机篇）</p>
                             </li>
                             <li>
-                                <img src="./images/01_296.jpg" alt="">
-                                <p>一团火</p>
-                                <p>潮流镜面渐变</p>
-
+                                <img src="./images/01_298.jpg" alt="">
+                                <p>小米8，一部与众不同的手机</p>
+                                <p>透明探索版，将科技与美学完美结合</p>
                             </li>
                             <li>
-                                <img src="./images/01_296.jpg" alt="">
-                                <p>一团火</p>
-                                <p>潮流镜面渐变</p>
-
+                                <img src="./images/01_300.jpg" alt="">
+                                <p>小米MIX2S，一面科技一面技术</p>
+                                <p>艺术品般陶瓷机身，惊艳，璀璨</p>
                             </li>
                             <li>
-                                <img src="./images/01_296.jpg" alt="">
-                                <p>一团火</p>
-                                <p>潮流镜面渐变</p>
-
+                                <img src="./images/m-1首页_227.jpg" alt="">
+                                <p>生活中无处不在的小爱同学</p>
+                                <p>一句话搞定手机复杂操作</p>
                             </li>
-
-
                         </ul>
                     </div>
                 </div>
